@@ -3,7 +3,9 @@
   "description": "Element to consume Ordercloud setting keys API",
   "main": "oc-settingkeys-api.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-ajax": "^1.3.0",
+    "oc-core-utils": "git://github.com/oc-elements/oc-core-utils#1.x"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
