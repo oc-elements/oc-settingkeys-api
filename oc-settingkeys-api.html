@@ -12,6 +12,7 @@ Element to consume Ordercloud setting keys API
 <dom-module id="oc-settingkeys-api">
   <template>
     <iron-ajax id="getKey"></iron-ajax>
+    <iron-ajax id="getKeysByTag"></iron-ajax>
   </template>
 
   <script>
@@ -28,6 +29,16 @@ Element to consume Ordercloud setting keys API
         this.$.getKey.url = this._url('/setting/keys/' + key);
         return this._generateRequest(this.$.getKey);
       },
+
+      /**
+       * Get keys by tag id
+       *
+       * @return {Promise}
+       */
+      getKeysByTag: function(tagId) {
+        this.$.getKeysByTag.url = this._url('/setting/keys/tag/' + tagId);
+        return this._generateRequest(this.$.getKeysByTag);
+      }
 
     });
   </script>
